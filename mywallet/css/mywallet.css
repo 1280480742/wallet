@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+.box{
+	width:100%;
+	height:auto;
+	font-family:"黑体";	
+}
+.box .balance{
+	width:100%;
+	height:auto;
+	background-color:#FFF;
+	
+}
+.box .balance .wallet{
+	width:90%;
+	height:auto;
+	margin:auto;
+	
+}
+.box .balance .wallet .account{
+	padding:15px 0px 0px 0px;
+	font-size:16px;
+	color:#757575;	
+}
+.box .balance .wallet .num{
+	font-size:40px;
+	color:#8db803;
+}
+.box .balance .wallet .button{
+	font-size:18px;
+	color:#FFF;
+	line-height:35px;
+}
+.box .balance .wallet button{
+	width:100%;
+	height:auto;
+	background-color:#8db803;
+	border-radius:4px;
+	margin-bottom:15px;
+}
+.box .income_spend{
+	margin-top:15px;
+	width:100%;
+	height:auto;
+	background-color:#FFF;
+	
+}
+.box .income_spend  p{
+	width:100%;
+	padding:2% 5%;
+	font-size:18px;
+	font-weight:normal;
+	line-height:40px;
+	border-bottom:1px solid #dbdbdb;
+}
+.box .income_spend  li{
+	width:100%;
+	padding:2% 5%;
+	box-sizing:border-box;
+	height:auto;
+	margin:auto;
+	border-bottom:1px solid #dbdbdb;
+	
+}
+.box .income_spend p a{
+	color: #888;
+}
+a:visited,a:hover,a:active{
+	text-decoration:none;
+	color:inherit;
+}
+.income_spend.income_list{
+	border-bottom:1px solid #CCC;
+}
+.income_list li span .income,.income_list li span.expend{
+	display: block;
+	font-size: 18px;
+	line-height: 40px;
+}
+ .expend{
+	font-size: 16px;
+	font-style:normal
+}
+.income_list .income_name{
+	font-size: 17px;
+	height: 25px;
+	line-height: 25px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+
+.income_list .income_time{
+	font-size: 13px;
+	color: #686868;
+	line-height: 15px;
+	height: 15px;
+}
+
+.income_spend .income_list .clearfix .font{
+	color: #8db803;
+}
+
+
+

@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	font-family:"黑体";
+}
+body{
+	background-color:#FFF;
+}
+.pay{
+	width:100%;
+	height:auto;
+	border-bottom:15px solid #f0f2f5;
+	background-color:#FFF;
+}
+.pay .box{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	padding:10px 0px;
+	position:relative;
+}
+.pay .box img{
+	position:absolute;
+	right:0;
+	top:50%;
+	transform:translate(0,-50%);
+}
+.pay .box span{
+	font-size:20px;
+}
+.pay .box .yu{
+	position: absolute;
+  top: 22px; left: 0; bottom: 0; right: 100px;
+}
+.pay .box .num{
+	font-size:35px;
+	margin-left:40px;
+}
+img { 
+	width:3%;
+} 
+.sum{
+	width:100%;
+	height:auto;
+	background-color:#FFF;
+	overflow:hidden;
+	border-bottom:15px solid #f0f2f5;
+	
+}
+.sum .sum_a{
+	width:90%;
+	margin:auto;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.sum .sum_b{
+	width:90%;
+	margin:auto;
+	margin-top:30px;
+	
+}
+.sum .money{
+	width:100%;
+	margin:auto;
+	height:auto;
+}
+li{
+	width:30.9%;
+	margin-right:3%;
+	margin-bottom:3%;
+	text-align:center;
+	border:1px solid red;
+}
+li:last-child{
+	margin-right:0;
+}
+.money .box{
+	width: 90%;
+	line-height: 25px;
+	overflow: hidden;
+	height:auto;
+	margin:0 auto;
+}
+.money .box .ul1{
+	overflow:hidden;
+}
+
+.money .box .ul1 .font-size{
+	font-size: 22px;
+	margin-top: 6%;
+}
+.money .box .ul1 .size{
+	font-size: 12px;	
+}
+li{
+	list-style: none;
+	float: left;
+	width:31%;
+	margin-right: 3.33%;
+	border: 1px solid #ccc;
+	padding:3%;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	border-radius:4px;
+}
+.li2{
+ margin-right: 0;
+}
+.active{
+	border:1px solid #ff0000;
+	color: red;
+}
+li p{
+	text-align: center;
+}
+.play{
+	width:100%;
+	height:100%;
+	background-color:#FFF;
+	overflow:hidden;
+}
+.mode{
+	width:100%;
+	line-height:50px;
+	border-bottom:1px solid #dbdbdb;
+	position:relative;
+}
+.mode .font{
+	width: 90%;
+	font-size:18px;
+	margin-left:7%;
+}
+.mode .pay img{
+	width: 5%;
+	height: auto;
+	position:absolute;
+	right:5%;
+	top:50%;
+	transform:translate(0,-50%);
+}
+.bt_p{
+	font-size:13px;
+	color:#999;	
+	margin:15px;
+	text-align: center;
+}
+.bt_p a{
+	color:#000;
+	text-decoration:underline;
+}
+#num1{
+	width:90%;
+	display: block;
+	margin: 0 auto;
+	line-height:40px;
+	background-color:#8db803;
+	margin-top:20px;
+	border-radius:4px;
+	text-align:center;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+
+
+

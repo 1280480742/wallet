@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maxmum-scale=1.0,user-scalable=0">
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+	
+	<meta name="keywords" content="">
+	<meta name="Description" content="" />
+
+	<link rel="shortcut icon" href="./favicon.ico">
+	<!------ css ------------------------------------------>
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="css/normalize.css" type="text/css" rel="stylesheet">
+	<link href="css/base.css" type="text/css" rel="stylesheet">
+    <link href="css/recharge.css" type="text/css" rel="stylesheet">
+	<!------ css ------------------------------------------>
+	<!------ js ------------------------------------------>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+	<!------ js ------------------------------------------>
+	
+	
+</head>
+
+<body>
+   <div class="pay">
+     	<div class="box">
+        	<a href="mywallet.html"><span class="yu">余额</span><span class="num">100元</span><img src="img/iconfont-jiantou.png"></a>
+        </div> 
+   </div>  
+   
+  <div class="sum">
+  	<div class="sum_a">
+    <input  type="search" class="form-control" id="name" placeholder="手动输入充值金额">
+   <!--<input id="num"  type="search" name="user_search" placeholder="手动输入充值金额"/>-->
+    </div>
+    <div class="money">
+		<div class="box">
+			<ul id="ul1" class="ul1">
+				<li class="active">
+					<p class="font-size">100元</p>
+					<p class="size">赠送：<i>20</i>元</p>
+				</li>
+				<li class="li1"> 
+					<p class="font-size">300元</p>
+					<p class="size">赠送：<i>60</i>元</p>
+				</li>
+				<li class="li2">
+					<p class="font-size">500元</p>
+					<p class="size">赠送：<i>100</i>元</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+  </div>
+ <div class="play">
+  	<div class="mode">
+		
+    		<a href="#" class="font">默认支付方式<span class="pay">
+            <img src="img/iconfont-wxpay.png" class="img-responsive" ></span></a>
+    	
+    </div>
+<a href="#"><input id="num1" type="button" value="立即充值（到账120元）"></a>
+<p class="bt_p">点击立即充值，即表示您已同意<a href="#">《充值协议》</a></p>
+
+</div>
+<script type="text/javascript">
+	$(function(){
+		$("#ul1 li").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			var d = parseFloat($(this).children("p").first().html());
+			var f = parseFloat($(this).children("p").last().children('i').html());
+			$("#num1").val('立即充值（到账'+(d+f)+'元）');
+			$("#name").val('');
+			$("#name").attr("placeholder","手动输入充值金额");
+		});
+
+		$("#name").change(function(){
+			var a = parseFloat($(this).val());
+			var count = parseInt(a/100);
+			if(a%100==0){
+				
+				for(var  i=0;i<count;i++){
+					a+=20;
+					//alert(a);
+				}
+				
+			}else{
+				a = a+ count*20;
+			}
+			$("#num1").val('立即充值（到账'+a+'元）');
+		});
+	});
+</script>
+</body>
+</html>
